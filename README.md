@@ -1,6 +1,6 @@
 # ACME 
 
-Software para la administración de la información de la empresa de transporte acme.
+Software para la administración de la información de la empresa de transporte acme. hace parte del backend y fue hecho en Laravel 7.
 
 # Endpoints
 
