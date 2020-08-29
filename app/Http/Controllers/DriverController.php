@@ -35,8 +35,8 @@ class DriverController extends Controller
      */
     public function store(Request $request)
     {
-        Driver::create($request);
-        return self::Ok(['response'=>'el vehículo fue creado satisfactoriamente']);
+        Driver::create($request->all());
+        return self::Ok(['response'=>'El conductor fue creado satisfactoriamente']);
     }
 
     /**

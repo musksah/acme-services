@@ -37,8 +37,8 @@ class VehicleController extends Controller
      */
     public function store(Request $request)
     {
-        Vehicle::create($request);
-        self::Ok(['response'=>'el vehículo fue creado satisfactoriamente']);
+        Vehicle::create($request->all());
+        return self::Ok(['response'=>'El vehículo fue creado satisfactoriamente']);
     }
 
     /**

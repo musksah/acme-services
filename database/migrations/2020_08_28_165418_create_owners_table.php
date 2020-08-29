@@ -17,7 +17,7 @@ class CreateOwnersTable extends Migration
             $table->id();
             $table->unsignedInteger('dni_id');
             $table->string('first_name', 150);
-            $table->string('middle_name', 150);
+            $table->string('middle_name', 150)->nullable();
             $table->string('surnames', 250);
             $table->text('address');
             $table->string('phone_number');
