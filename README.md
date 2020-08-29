@@ -1,4 +1,4 @@
-# acme-services
+# ACME 
 
 Software para la administración de la información de la empresa de transporte acme.
 
@@ -20,7 +20,7 @@ POST : http://45.82.73.11/api/drivers
 
 GET : http://45.82.73.11/api/owners
 
-- Crea un propietarios
+- Crea un propietario
 
 POST : http://45.82.73.11/api/owners
 
@@ -30,7 +30,7 @@ POST : http://45.82.73.11/api/owners
 
 GET : http://45.82.73.11/api/vehicles
 
-- Crea un vehículos
+- Crea un vehículo
 
 POST : http://45.82.73.11/api/vehicles
 
