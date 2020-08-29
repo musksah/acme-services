@@ -2,7 +2,9 @@
 
 Software para la administración de la información de la empresa de transporte acme. hace parte del backend y fue hecho en Laravel 7.
 
-# Endpoints Drivers:
+# Endpoints 
+
+# Drivers:
 
 - Lista de conductores
 
@@ -20,7 +22,7 @@ PUT : http://45.82.73.11/api/drivers/{id_driver}
 
 DELETE : http://45.82.73.11/api/drivers/{id_driver}
 
-# Endpoints Owners:
+# Owners:
 
 - Lista de propietarios
 
@@ -38,7 +40,7 @@ PUT : http://45.82.73.11/api/owners/{id_owner}
 
 DELETE : http://45.82.73.11/api/owners/{id_owner}
 
-# Endpoints Vehicles:
+# Vehicles:
 
 - Lista de vehículos
 
