@@ -72,7 +72,10 @@ class VehicleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $vehicle = Vehicle::find($id);
+        $vehicle->fill($request->all());
+        $vehicle->save();
+        return self::Ok(['response'=>'El vehículo fue actualizado satisfactoriamente.']);
     }
 
     /**
@@ -83,6 +86,8 @@ class VehicleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $vehicle = Vehicle::find($id);
+        $vehicle->delete();
+        return self::Ok(['response'=>'El vehículo fue eliminado satisfactoriamente.']);
     }
 }

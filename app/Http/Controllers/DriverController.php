@@ -71,7 +71,10 @@ class DriverController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $driver = Driver::find($id);
+        $driver->fill($request->all());
+        $driver->save();
+        return self::Ok(['response'=>'El conductor fue actualizado satisfactoriamente.']);
     }
 
     /**
@@ -82,6 +85,8 @@ class DriverController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $driver = Driver::find($id);
+        $driver->delete();
+        return self::Ok(['response'=>'El conductor fue eliminado satisfactoriamente.']);
     }
 }

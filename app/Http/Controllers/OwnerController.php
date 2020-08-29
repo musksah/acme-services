@@ -58,7 +58,7 @@ class OwnerController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -70,7 +70,10 @@ class OwnerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $owner = Owner::find($id);
+        $owner->fill($request->all());
+        $owner->save();
+        return self::Ok(['response'=>'El propietario fue actualizado satisfactoriamente.']);
     }
 
     /**
@@ -81,6 +84,8 @@ class OwnerController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $owner = Owner::find($id);
+        $owner->delete();
+        return self::Ok(['response'=>'El propietario fue eliminado satisfactoriamente.']);
     }
 }
